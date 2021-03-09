@@ -13,7 +13,7 @@ jobs:
        uses: technote-space/create-pr-action@v2
        with:
          EXECUTE_COMMANDS: |
-           date +%s
+           date +%s > last_autobuild.txt
          COMMIT_MESSAGE: 'Committing timestamp PR to trigger build'
          COMMIT_NAME: 'GitHub Actions'
          COMMIT_EMAIL: 'devops@dwolla.com'
