@@ -17,5 +17,5 @@ jobs:
          COMMIT_MESSAGE: 'Committing timestamp PR to trigger build'
          COMMIT_NAME: 'GitHub Actions'
          COMMIT_EMAIL: 'devops@dwolla.com'
-         PR_BRANCH_NAME: 'main'
+         PR_BRANCH_NAME: 'triggerbuild-${PR_ID}'
          PR_TITLE: 'Commit timestamp PR to trigger build'
