@@ -1,8 +1,9 @@
 on:
  schedule:
    - cron: 0 0 * * 0
- pull_request:
-   types: [opened, synchronize, reopened, closed]
+ workflow_dispatch:
+  tags:
+        description: 'Manually trigger workflow'  
 
 name: Trigger Build
 jobs:
