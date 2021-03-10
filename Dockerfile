@@ -18,10 +18,10 @@ RUN apk add --update \
         tcl-dev \
         zlib-dev
 
-RUN pip3 install --upgrade \
-        wheel
+RUN pip3 install --upgrade --no-cache-dir \
+	wheel
 
-RUN pip3 install --upgrade \
+RUN pip3 install --upgrade --no-cache-dir \
         matplotlib \
         numpy \
 	pandas \
